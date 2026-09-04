@@ -16,45 +16,20 @@ The proverbial cat is out of the bag however and we are ushered into the open-so
 
 The open-source AI model maintainers should learn from the industry and:
 
--
-
-Audit their models for security and code quality regularly; employ secure access control measures.
-
--
-
-Run vulnerability scanning (see [Sleepy Pickle](https://www.darkreading.com/threat-intelligence/sleepy-pickle-exploit-subtly-poisons-ml-models)). They should also further protect the behavior integrity of their models from data poisoning attacks by.
-
--
-
-Ensuring encryption in transit (TLS) on their data ingestion pipelines.
-
--
-
-Embedding watermarks in the dataset to detect manipulation.
-
--
-
-Employ adversarial training to ensure models are less susceptible to prompt injections attacks.
+- Audit their models for security and code quality regularly; employ secure access control measures.
+- Run vulnerability scanning (see [Sleepy Pickle](https://www.darkreading.com/threat-intelligence/sleepy-pickle-exploit-subtly-poisons-ml-models)). They should also further protect the behavior integrity of their models from data poisoning attacks by.
+- Ensuring encryption in transit (TLS) on their data ingestion pipelines.
+- Embedding watermarks in the dataset to detect manipulation.
+- Employ adversarial training to ensure models are less susceptible to prompt injections attacks.
 
 Most importantly, open-source AI models maintainers need to adopt a culture of trust and transparency both in the security practices they employ to ensure the integrity of the models the release and in timely disclosure of vulnerabilities.
 
 The consumers of open-source AI models should also learn from the industry on supply-chain protection best practices and:
 
--
-
-Audit and track their consumption of OSS/AI and dependencies.
-
--
-
-Employ vulnerability scanning.
-
--
-
-Access control best practices.
-
--
-
-Ensure deployment integrity of these models into their production environment.
+- Audit and track their consumption of OSS/AI and dependencies.
+- Employ vulnerability scanning.
+- Access control best practices.
+- Ensure deployment integrity of these models into their production environment.
 
 Consumers should also ingest multiple AI models to further spread the risk of being impacted by a single vulnerability. And lastly ensure they have a robust CI/CD and patching strategy to ensure they can quickly act to patch vulnerabilities.
 
