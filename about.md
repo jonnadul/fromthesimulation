@@ -4,9 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I write about AI agents, cloud security, and the systems we build and operate.
+Hi, I'm Srujan and I'm working on writing more about stuff.
 
-This site is a self-hosted Jekyll blog. It was migrated from Substack
-(*From the Simulation*) in September 2026.
+[Linkedin] (https://www.linkedin.com/in/srujan-jonnadula/)
+[GitHub](https://github.com/jonnadul)
+[X](https://x.com/JonnadulaS54850)
 
-You can reach me on [GitHub](https://github.com/jonnadul).
+[Buymecoffee](https://studio.buymeacoffee.com/dashboard)

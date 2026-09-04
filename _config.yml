@@ -1,10 +1,6 @@
 title: From the Simulation
-description: >-
-  Notes on AI agents, cloud security, and the systems we build —
-  by Jonna Dul. Previously on Substack.
 author:
-  name: Jonna Dul
-  email: ""
+  name: Srujan Jonnadula
 # GitHub Pages serves this site from a subpath, so baseurl MUST be set or every
 # generated link (css, posts, about, feed) 404s.
 baseurl: "/fromthesimulation"
