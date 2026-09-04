@@ -1,0 +1,53 @@
+title: From the Simulation
+description: >-
+  Notes on AI agents, cloud security, and the systems we build —
+  by Jonna Dul. Previously on Substack.
+author:
+  name: Jonna Dul
+  email: ""
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+timezone: America/Los_Angeles
+encoding: utf-8
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+
+exclude:
+  - tools/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .git/
+  - .gitignore
+
+# Keep drafts out of the built site
+unpublished: false
+
+# Pagination-free simple listing on the homepage
+sass:
+  style: compressed

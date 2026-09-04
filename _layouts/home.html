@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="intro">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.subtitle %}
+          <p class="post-subtitle">{{ post.subtitle }}</p>
+        {% endif %}
+        <p class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </p>
+        <p class="post-excerpt">
+          {{ post.content | strip_html | truncatewords: 45 }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if site.posts.size == 0 %}
+    <p>No posts yet. Add a Markdown file to <code>_posts/</code> named
+    <code>YYYY-MM-DD-title.md</code>.</p>
+  {% endif %}
+
+</div>
