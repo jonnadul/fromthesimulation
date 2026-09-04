@@ -3,10 +3,7 @@ layout: post
 title: "Cautions in the Open-Source AI-era"
 subtitle: "Some thoughts and retrospections"
 date: 2025-03-20 05:13:19
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 159043719.open-source-in-the-ai-era
 ---
 
 When I read about industry leaders like [Yann LeCun advocating the benefits of open-sourcing AI models](https://www.businessinsider.com/meta-ai-yann-lecun-deepseek-open-source-openai-2025-1) I feel conflicted. Open-source has been the driving force for innovation by fostering open collaboration and community engagement. However its operating model has been severally strained by our evolving world of threat actors and I fear for the consequences in the AI-era.
@@ -64,5 +61,3 @@ Consumers should also ingest multiple AI models to further spread the risk of be
 Finally the end customers of these open-source AI models and services need to exercise extreme caution and ensure they are not sharing personal or work-related information, maintaining awareness of the context behind certain models (especially ones originating from China), and being vigilant in staying up-to-date on patches.
 
 The open-source ecosystem is a bit of a burning building at the moment, and introducing AI-models into the mix feels like adding more fuel. However I’m cautiously optimistic.
-
-[Subscribe now](https://fromthesimulation.substack.com/subscribe?)

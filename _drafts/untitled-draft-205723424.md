@@ -3,7 +3,6 @@ layout: post
 title: "Untitled draft (Substack 205723424)"
 date: 2026-07-07
 published: false
-substack_id: 205723424.6de
 ---
 
 This post existed in the Substack export as an unpublished draft with an

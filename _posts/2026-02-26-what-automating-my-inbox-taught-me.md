@@ -2,10 +2,7 @@
 layout: post
 title: "What Automating My Inbox Taught Me About Agentic Behavior"
 date: 2026-02-26 16:02:27
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 187323884.what-automating-my-inbox-taught-me
 ---
 
 I use outlook for my personal email, and I like it because of its rules engine which is really powerful and helps keep my inbox organized. But the need to create and test new rules double check the existing ones are running I just hate the management overhead. So, I automated my outlook inbox folder management!
@@ -41,5 +38,3 @@ What I learned is that **sometimes** the more effective use of AI and Agentic sy
 ---
 
 Let me know if you agree or disagree! All feedback welcome is welcome!
-
-[Subscribe now](https://fromthesimulation.substack.com/subscribe?)

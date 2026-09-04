@@ -3,10 +3,7 @@ layout: post
 title: "Building an Agentic Ops Squad"
 subtitle: "Streamline your service operational debt with AI Agents"
 date: 2025-08-04 15:03:15
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 169972504.building-an-agentic-ops-squad
 ---
 
 Whether you are building brand new services, implementing features, or simply maintaining existing services at cloud scale; operational debt will naturally accrue and managing this debt is always a challenge due to prioritization, resourcing, etc. Leaving this debt unmanaged will eventually degrade services and debilitate team efficiencies. What is required is a dedicated team with well-articulated lines of ownership, outcome expectations, and dedicated focus, aka an **Ops Squad**.
@@ -93,5 +90,3 @@ I’m truly impressed by how much of the Ops Squad can be offloaded to an agenti
 ---
 
 Hope you found this post interesting and please do leave a comment if you have feedback!
-
-[Subscribe now](https://fromthesimulation.substack.com/subscribe?)

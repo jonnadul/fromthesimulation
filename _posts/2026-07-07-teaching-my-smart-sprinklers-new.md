@@ -3,10 +3,7 @@ layout: post
 title: "Teaching my smart sprinklers new tricks!"
 subtitle: "How I leveraged Claude Code to reverse engineer and integrate my sprinklers into my smart home ecosystem!"
 date: 2026-07-07 22:49:43
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 205723453.teaching-my-smart-sprinklers-new
 ---
 
 I have these [Oto smart sprinklers](https://otolawn.com/) and I love them; they are perfect for my lawn which is just big enough to need sprinklers but not big enough for a more complex irrigation system. They’re well designed, tech-forward, app‑driven, and smarter than most other sprinkler systems out there. But they live outside of my HomeKit universe, which requires me to manage schedules and automation across multiple apps making the overall experience clunky and frustrating at times. There is [Homebridge](https://homebridge.io/) a co-platform to HomeKit where you can build and run open-source plugins maintained by a hobbyist community but there weren’t any plugins (yet) for this product there and creating one from scratch was difficult because Oto doesn’t officially publish any APIs.

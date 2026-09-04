@@ -3,10 +3,7 @@ layout: post
 title: "Solving a Cryptographic Mystery"
 subtitle: "An attempt to brute force the original ECDSA seeds"
 date: 2024-01-21 08:17:36
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 140211946.brute-forcing-ecdsa-seeds-using-openai
 ---
 
 A few months back I came across this [blog post](https://saweis.net/posts/nist-curve-seed-origins.html) by [Steve Weis](https://infosec.exchange/@sweis) which goes as follows.
@@ -50,5 +47,3 @@ I ran the above application for 48 hours on a 1 OCPU E2 VM in my free tier accou
 After the first 200 or so the phrases being returned by OpenAI were getting longer and wordier making their likeliness to be the original phrase less plausible. Placing restrictions on the phrases returned, like asking OpenAI to reducing word count, only caused it to give-up earlier. The strategy for the additional values needs to be further thought out like increasing the max length to beyond 3 and trying attempts where I sprinkle it through the phrase than just pre-pending/post-pending. Also obviously I’ll need a beefier hardware, the 1 OCPU was being nearly fully utilized at almost 98% for the entire 48 hours!
 
 At this point my initial approach has hit a brick wall. But I have some ideas on how to iterate on this approach further, so stay tuned!
-
-[Subscribe now](https://fromthesimulation.substack.com/subscribe?)

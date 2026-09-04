@@ -3,10 +3,7 @@ layout: post
 title: "Rethinking the Operator Access Experience"
 subtitle: "Using LLMs, MCP and AI Agents to provide an empowering and secure operator access experience"
 date: 2025-03-29 22:52:07
-categories: [imported]
-tags: [substack]
 published: true
-substack_id: 159673067.rethinking-the-operator-access-experience
 ---
 
 [Anthropic's Model Context Protocol (MCP)](https://docs.anthropic.com/en/docs/agents-and-tools/mcp) standard has bridged a critical gap between large language models (LLMs) and applications. Enabling these models to operate with enhanced context and increased their applicability. The MCP standard has already proven wildly success [fostering a rapidly expanding ecosystem](https://github.com/punkpeye/awesome-mcp-servers) and leading AI services like [OpenAI](https://openai.github.io/openai-agents-python/mcp/), [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents/?msockid=033b0f5e3887618d35e41a3a39aa6098), and [Perplexity](https://docs.perplexity.ai/guides/mcp-server) quickly embracing and supporting the standard. The release of this technology had me particularly revisiting a long-standing painpoint in cloud security with a fresh perspectives.
@@ -57,5 +54,3 @@ Some querks I observed is the llama2 model ran pretty slow possibly because I us
 ---
 
 I hope this served as a good case study for how these next generation of AI-based, Agentic systems have shifted the conversation and unlocked opportunities to go back and rethink traditional approaches! I’d love to get you feedback so please do drop a comment on either the blog post or my [Agentic MCP Server sshclient](https://github.com/jonnadul/mcpsshclient/tree/main) project!
-
-[Subscribe now](https://fromthesimulation.substack.com/subscribe?)

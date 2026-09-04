@@ -1,7 +1,7 @@
 title: From the Simulation
 # Explicit description. Without this, jekyll-seo-tag falls back to the GitHub
 # repo description ("My Technical Blog") for <meta name="description">.
-description: "Notes on AI agents, cloud security, and the systems we build."
+description: ""
 author:
   name: Srujan Jonnadula
 # GitHub Pages serves this site from a subpath, so baseurl MUST be set or every
