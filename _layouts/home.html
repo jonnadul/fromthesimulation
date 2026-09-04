@@ -4,12 +4,9 @@ layout: default
 
 <div class="home">
 
-  <div class="intro">
-    <p>{{ site.description }}</p>
-  </div>
-
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% comment %}Landing page shows only the most recent post.{% endcomment %}
+    {% for post in site.posts limit:1 %}
       <li>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {% if post.subtitle %}
@@ -25,9 +22,13 @@ layout: default
     {% endfor %}
   </ul>
 
+  <p class="archive-link">
+    <a href="{{ '/archive/' | relative_url }}">Read older posts &rarr;</a>
+  </p>
+
   {% if site.posts.size == 0 %}
     <p>No posts yet. Add a Markdown file to <code>_posts/</code> named
-    <code>YYYY-MM-DD-title.md</code>.</p>
+      <code>YYYY-MM-DD-title.md</code>.</p>
   {% endif %}
 
 </div>

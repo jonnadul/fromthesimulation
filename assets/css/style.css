@@ -217,6 +217,13 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.5rem;
 }
 
+.archive-link {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+
 @media (max-width: 600px) {
   body { font-size: 17px; }
   .post-title { font-size: 1.7rem; }
