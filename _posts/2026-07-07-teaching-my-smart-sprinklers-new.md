@@ -55,9 +55,9 @@ Please find the [code](https://github.com/jonnadul/homebridge-oto) and [publishe
 
 Once this plugin is successfully installed and configured on your Homebridge instance and added to your Apple HomeKit. Here is the final product!
 
-![](/assets/img/raw/0f5936eb-76c4-4dc0-ae19-be6dad732102_1206x1913.png)
+![]({{ '/assets/img/raw/0f5936eb-76c4-4dc0-ae19-be6dad732102_1206x1913.png' | relative_url }})
 
-![](/assets/img/raw/12a47975-76cd-489d-b620-c44ef65039d5_1206x2622.png)
+![]({{ '/assets/img/raw/12a47975-76cd-489d-b620-c44ef65039d5_1206x2622.png' | relative_url }})
 
 This is by no means a finish product with a couple issues I’d like to fix; zone names not come through correctly; making these switches more intelligent (would love for plugin to auto sequence each of the zones and just expose a single water button); and a couple others.
 
@@ -138,7 +138,7 @@ From that pattern alone:
 
 Put together, it’s a textbook “Firebase + Cloud Run” mobile stack: Firebase handles auth and data, a handful of Cloud Run services carry the custom logic, Firestore is the system of record, and the sprinkler itself phones home over a dedicated telemetry service.
 
-![](/assets/img/raw/b76c55a3-a1ec-4c07-b686-5e3f8568ac18_2279x1001.png)
+![]({{ '/assets/img/raw/b76c55a3-a1ec-4c07-b686-5e3f8568ac18_2279x1001.png' | relative_url }})
 
 ### Appendix B - Oto Service APIs
 

@@ -14,7 +14,7 @@ Using [n8n](https://n8n.io/) I created a workflow that triggers a call into an a
 
 Here is a diagram of this workflow.
 
-![](/assets/img/raw/710cc6f2-2206-46fc-80c9-9779fed98db5_899x548.png)
+![]({{ '/assets/img/raw/710cc6f2-2206-46fc-80c9-9779fed98db5_899x548.png' | relative_url }})
 
 This workflow ran into some interesting issues. The agent was able to properly classify the incoming emails but consistently failed with moving it to the classified folder because specifically the Outlook create folder, and move message, tools worked against the message and folder ID rather than name. Even with the other tools providing folder names and IDs the agent still struggled in managing the mapping.
 
@@ -28,7 +28,7 @@ With this in mind, I took a slightly different approach where I focused the agen
 
 Here is the updated workflow.
 
-![](/assets/img/raw/b43917a4-1b9a-4f1c-bb25-861123d17694_1938x576.png)
+![]({{ '/assets/img/raw/b43917a4-1b9a-4f1c-bb25-861123d17694_1938x576.png' | relative_url }})
 
 And this worked a lot better! The agent still does some weird classifications like I have both a **Substack** folder and a separate one called **systemdesignone** where I just get [The System Design Newsletter](https://newsletter.systemdesign.one/) but, in this workflow, I’m guaranteed that an incoming email into my inbox always get moved to some folder. That makes me a happy camper!
 

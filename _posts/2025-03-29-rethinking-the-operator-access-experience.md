@@ -21,7 +21,7 @@ The industry recognizes the threat, and “reduces the attack surface” by moni
 
 What if instead of restrictions, we empowered the operator by providing an AI-backed operator access client with an intuative experience that simultanious abstracted the nuances of the access protocol and security monitoring and measures themselves. To demonstrate this I took an [Github Copilot (in VSCode) MCP client](https://code.visualstudio.com/insiders/) and connecting it to a [ssh-client MCP Server](https://github.com/jonnadul/mcpsshclient). Which exposes the `new-ssh-connection` and `run-safe-command `operations with the MCP protocol for the client to interact with while servicing these requests through the traditional SSH protocol.
 
-![](/assets/img/raw/7f084eef-fdc8-4ed7-a04b-54732e53641f_577x452.png)
+![]({{ '/assets/img/raw/7f084eef-fdc8-4ed7-a04b-54732e53641f_577x452.png' | relative_url }})
 
 Here is the operator experience!
 
@@ -33,7 +33,7 @@ So this is an interesting, conversation based operator access experience but how
 
 To answer that question, I added an AI security agent (running off a [llama2 model](https://ollama.com/library/llama2)) into the ssh-client MCP server which analyzes every incoming command to be run via the SSH connection, determines whether its safe or unsafe and for unsafe commands returns a message indicating that the command was rejected.
 
-![](/assets/img/raw/67d5771e-e315-49c5-a8b3-e18c3bebb77c_568x450.png)
+![]({{ '/assets/img/raw/67d5771e-e315-49c5-a8b3-e18c3bebb77c_568x450.png' | relative_url }})
 
 Note that you can configure how this security agent operates by specifying its SECURITY_POLICY in the [secagentconfig.json](https://github.com/jonnadul/mcpsshclient/blob/main/secagentconfig.json).
 
@@ -46,11 +46,11 @@ Note that you can configure how this security agent operates by specifying its S
 
 Here is an instance of the AI security agent allowing me to run ls on my home directory.
 
-![](/assets/img/raw/468ecb6b-6a45-480a-a37b-334e287ecf67_1732x974.png)
+![]({{ '/assets/img/raw/468ecb6b-6a45-480a-a37b-334e287ecf67_1732x974.png' | relative_url }})
 
 And here is an instance of the AI security agent not allowing me to create an empty text file.
 
-![](/assets/img/raw/1551dbc9-7d4c-48d6-9432-2c3dc1ecf0d6_1732x974.png)
+![]({{ '/assets/img/raw/1551dbc9-7d4c-48d6-9432-2c3dc1ecf0d6_1732x974.png' | relative_url }})
 
 Some querks I observed is the llama2 model ran pretty slow possibly because I used a Standard D2ads v6 (2 vcpus, 8 GiB memory) on Azure. The security agent was also inconsistent in its designation of whether a command was safe vs unsafe and I think one way to address it in this demo is to prompt engineer the security policy statement and the command going to the llama2 model. However productizing this type of an approach for operator access governance will require adopting a security focused LLM model and agent like [Microsoft Copilot Security](https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot?msockid=033b0f5e3887618d35e41a3a39aa6098), [Simbinal AI](https://simbian.ai/), etc to ensure the most accurate, consistent, and trustworthy behavior.
 
