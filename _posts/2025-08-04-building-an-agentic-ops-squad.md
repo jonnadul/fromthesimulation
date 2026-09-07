@@ -16,11 +16,11 @@ However, given the dynamic nature of operating large-scale services, it usually 
 
 Basically, I want to implement three agents; the Site Reliability Engineer who has access to service logs, metrics, and customer tickets who is responsible for triaging across all of these data sources to analyze and surface up the highest impacting service incidents and encapsulate the incident severity; the Software Engineer who ingests a given incident, does the research and analysis across internal and external documentation, and provides a technical design and strategy for mitigating and resolving the issue along with a cost estimate; and the Ops Squad Leader responsible for interacting across the Site Reliability Engineer and Software Engineer to generate a list of tasks for the highest impacting incidents with the lowest cost of implementing a solution for the Ops Squad to prioritize.
 
-![]({{ '/assets/img/raw/ba0b7544-b2df-4db0-8379-9167d8dde140_1280x720.jpeg' | relative_url }})
+![]({{ '/assets/img/raw/ba0b7544-b2df-4db0-8379-9167d8dde140_1280x720.jpeg' | absolute_url }})
 
 Since I don’t personally own any large-scale services/engineering systems or want to connect to anything at work for a personal project. I decided to scope it down a bit and implement a demonstration of this in [Azure AI Foundry](https://ai.azure.com/). Where I’ll have the Site Reliability Engineer ingest in a [text file of sample Zookeeper logs](https://github.com/logpai/loghub/tree/master/Zookeeper), a generic Software Engineer, and have the Ops Squad Leader create tasks in a [Microsoft Planner](https://planner.cloud.microsoft/).
 
-![]({{ '/assets/img/raw/614f2892-a63e-4a89-8620-42721eb24088_1528x492.png' | relative_url }})
+![]({{ '/assets/img/raw/614f2892-a63e-4a89-8620-42721eb24088_1528x492.png' | absolute_url }})
 
 And here are the exact instructions I provided to each agent.
 
@@ -37,7 +37,7 @@ Instruction: You are the operations squad leader responsible for coordinating be
 
 For the Ops Squad Leader I also created connects to the other two agents and an action to create the planner tasks.
 
-![]({{ '/assets/img/raw/c20addce-a23a-4ab1-abe9-766ed9967ce8_1215x661.png' | relative_url }})
+![]({{ '/assets/img/raw/c20addce-a23a-4ab1-abe9-766ed9967ce8_1215x661.png' | absolute_url }})
 
 Here are the function names and descriptions used for the agent connections.
 
@@ -53,7 +53,7 @@ Description: Reach out to this agent to get the exact technical design, strategy
 
 And here is the action which basically links to an Azure Logic App that waits for a POST request containing the task title, and description then updated my planner as appropriate.
 
-![]({{ '/assets/img/raw/e9a2eb1d-b454-4910-87ce-0e95f9bb7e66_1236x795.png' | relative_url }})
+![]({{ '/assets/img/raw/e9a2eb1d-b454-4910-87ce-0e95f9bb7e66_1236x795.png' | absolute_url }})
 
 *Note: To get this action to work I needed to first publish a new Logic App from the AI Foundry Portal then go into Azure Portal to make the changes I wanted. It wasn’t able to directly link to an existing Logic App I created.*
 
@@ -61,11 +61,11 @@ And here is the action which basically links to an Azure Logic App that waits fo
 
 To test this out, I went into the Operations Squad Leader agent’s chat playground and typed in the following prompt.
 
-![]({{ '/assets/img/raw/4ae50107-8d07-4154-8a96-e7608d16bae5_1116x445.png' | relative_url }})
+![]({{ '/assets/img/raw/4ae50107-8d07-4154-8a96-e7608d16bae5_1116x445.png' | absolute_url }})
 
 Unfortunately, I hit the rate limit haha however when I checked my planner, I did see four tasks created with titles and descriptions that included a summary of the incident, solution, and breakdown of work along with estimates!
 
-![]({{ '/assets/img/raw/db277e58-aa3d-4c0d-99e0-81401c425d95_1330x1004.png' | relative_url }})
+![]({{ '/assets/img/raw/db277e58-aa3d-4c0d-99e0-81401c425d95_1330x1004.png' | absolute_url }})
 
 Some interesting ways to expand on this demo:
 - Create a trigger to prompt the Operations Squad Leader to run this exercise, which is basically another Logic App. Meaning the trigger can come from anywhere be it ticket creation, email, HTTP request, etc.

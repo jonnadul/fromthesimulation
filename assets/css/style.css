@@ -61,9 +61,8 @@ a:hover { text-decoration: underline; }
 .site-title:hover { text-decoration: none; color: var(--accent); }
 
 .site-tagline {
-  margin: 0.35rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
+  /* Kept in _config.yml for SEO/social metadata, but not shown in the header. */
+  display: none;
 }
 
 .site-nav {

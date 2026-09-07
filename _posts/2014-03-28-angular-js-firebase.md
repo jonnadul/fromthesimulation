@@ -5,7 +5,7 @@ subtitle: "A winning combination for rapid web app development"
 date: 2014-03-28 12:00:00
 published: true
 ---
-![]({{ '/assets/img/raw/1_u9gEfWbI8N4uUBeuImKzxg.png' | relative_url }})
+![]({{ '/assets/img/raw/1_u9gEfWbI8N4uUBeuImKzxg.png' | absolute_url }})
 
 I understand that there are tons of frameworks and back-end solutions out there catering to the multitude of types of web apps but my criteria when it came to picking the best package was rapid prototype-ability and an easiest learning curve (I am actually new to web app dev ☺). I have found both [Firebase](https://www.firebase.com/) and [Angular JS](http://angularjs.org/), btw I highly recommend the fundamentals course by [plural sight](http://pluralsight.com/training/Courses/TableOfContents/angularjs-fundamentals), to be well documented and fairly intuitive to learn and use. Here are some example of historically complex features made simple by AngularFire (Angular JS + Firebase), check out Firebase’s [official](https://www.firebase.com/quickstart/angularjs.html) support for this package.
 
@@ -21,7 +21,7 @@ Also include the following module into your app.js.
 
 This example goes through and demonstrates the Email & Password method of user signup and login, note that Firebase supports login via Facebook and other platforms as well.
 
-![]({{ '/assets/img/raw/1_C0eZoNjjAIUEq8UJNJhLnA.png' | relative_url }})
+![]({{ '/assets/img/raw/1_C0eZoNjjAIUEq8UJNJhLnA.png' | absolute_url }})
 
 Within Firebase be sure to go to *Dashboard->Simple Login->Email & Password* and click the **Enabled** radio button.
 
@@ -65,7 +65,7 @@ auth.createUser(newUser.emailaddress, newUser.password,
 
 In this example, *newUser* is a model with an email address and password that is being passed in from the view. Notice that you can check if the *createUser()* was successful via the *error* variable.
 
-![]({{ '/assets/img/raw/1_ZYejC0RpTgflP6rE-3BI0Q.png' | relative_url }})
+![]({{ '/assets/img/raw/1_ZYejC0RpTgflP6rE-3BI0Q.png' | absolute_url }})
 
 You can also verify that a user was created successfully by simple going back into *Dashboard->Simple Login->Email & Password *in your Firebase account and see that newly created record.
 

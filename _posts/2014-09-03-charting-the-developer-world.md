@@ -5,7 +5,7 @@ subtitle: "A simple project to map the social aspect of Github."
 date: 2014-09-03 12:00:00
 published: true
 ---
-![]({{ '/assets/img/raw/1_EBspffrBD4pXdcxg53HpNg.png' | relative_url }})
+![]({{ '/assets/img/raw/1_EBspffrBD4pXdcxg53HpNg.png' | absolute_url }})
 
 *A simple project to map the social aspect of Github.*
 
@@ -15,7 +15,7 @@ published: true
 
 #### Functionality
 
-![]({{ '/assets/img/raw/1_a4uAo54cvV2XsrDkydHNXQ.png' | relative_url }})
+![]({{ '/assets/img/raw/1_a4uAo54cvV2XsrDkydHNXQ.png' | absolute_url }})
 
 *Screencap of Github-map*
 
@@ -23,7 +23,7 @@ The application basically takes in a Github username, queries all public facing 
 
 #### Software Layout
 
-![]({{ '/assets/img/raw/1_1UYj3INbdr7IluWYAmMvKg.png' | relative_url }})
+![]({{ '/assets/img/raw/1_1UYj3INbdr7IluWYAmMvKg.png' | absolute_url }})
 
 The front-end is drive by [AngularJS](https://angularjs.org/), a very popular MVC framework, with visualizations being handled by [D](http://d3js.org/)3. The back-end is driven by [NodeJS](http://nodejs.org/), which handles queries to Github APIs, using [node-github](https://github.com/mikedeboer/node-github). Query results are handled as JSON objects and exchanged to the front-end via REST, [see](http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4).
 
