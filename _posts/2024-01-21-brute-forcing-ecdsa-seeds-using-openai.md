@@ -24,17 +24,9 @@ seed = SHA-1("Jerry and Bob need raises123")
 
 Since the format is pretty simple, and most of the value is dictionary words, I figure it’ll be a small enough search space for me to run a [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) and try all possible ways to say the phrase and add incrementing permutations of char values and SHA-1 hash it to see it’ll match any of the ECDSA seed values.
 
-1.
-
-Using OpenAI seems like the easiest way find out all the ways to say “Jerry and Bob need raises”.
-
-2.
-
-For the additional values, I’ll recursively generate all permutations of chars from the full [ASCII values](https://www.asciitable.com) and attach it both to the front, back, and front/back of the phrase.
-
-3.
-
-Even if the search space is truly this narrow it’ll take forever to run through this brute-force in series. So I’ll spawn threads for each of the phrases that’ll run through all permutations, to make the effort multithreaded.
+1. Using OpenAI seems like the easiest way find out all the ways to say “Jerry and Bob need raises”.
+2. For the additional values, I’ll recursively generate all permutations of chars from the full [ASCII values](https://www.asciitable.com) and attach it both to the front, back, and front/back of the phrase.
+3. Even if the search space is truly this narrow it’ll take forever to run through this brute-force in series. So I’ll spawn threads for each of the phrases that’ll run through all permutations, to make the effort multithreaded.
 
 Here is my [brute force golang application](https://gist.github.com/jonnadul/ad4eab0bac13cf44cb42e401045e1dac).
 
