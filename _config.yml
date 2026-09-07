@@ -4,10 +4,12 @@ title: From the Simulation
 description: ""
 author:
   name: Srujan Jonnadula
-# GitHub Pages serves this site from a subpath, so baseurl MUST be set or every
-# generated link (css, posts, about, feed) 404s.
-baseurl: "/fromthesimulation"
-url: "https://jonnadul.github.io"
+# Custom domain: fromthesimulation.blog
+# With a custom domain the site is served from the domain root, so baseurl
+# must be EMPTY -- leaving the old "/fromthesimulation" here would make every
+# generated link 404 at the new domain (or serve as /fromthesimulation/...).
+baseurl: ""
+url: "https://fromthesimulation.blog"
 
 # Build settings
 markdown: kramdown
