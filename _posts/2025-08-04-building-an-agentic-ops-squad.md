@@ -68,22 +68,10 @@ Unfortunately, I hit the rate limit haha however when I checked my planner, I di
 ![]({{ '/assets/img/raw/db277e58-aa3d-4c0d-99e0-81401c425d95_1330x1004.png' | relative_url }})
 
 Some interesting ways to expand on this demo:
-
--
-
-Create a trigger to prompt the Operations Squad Leader to run this exercise, which is basically another Logic App. Meaning the trigger can come from anywhere be it ticket creation, email, HTTP request, etc.
-
--
-
-Connect a coding agent, like [Cline](https://cline.bot/), to ingest and perform the changes outlined in the tasks published by the Ops Squad leader.
-
--
-
-Further fine-tuning of the various agents of the Ops Squad.
-
--
-
-Introduce an Ops Squad feedback agent, that is able to follow through on the success of a completed task and use that as feedback to either the prioritization or tuning of the various agents.
+- Create a trigger to prompt the Operations Squad Leader to run this exercise, which is basically another Logic App. Meaning the trigger can come from anywhere be it ticket creation, email, HTTP request, etc.
+- Connect a coding agent, like [Cline](https://cline.bot/), to ingest and perform the changes outlined in the tasks published by the Ops Squad leader.
+- Further fine-tuning of the various agents of the Ops Squad.
+- Introduce an Ops Squad feedback agent, that is able to follow through on the success of a completed task and use that as feedback to either the prioritization or tuning of the various agents.
 
 I’m truly impressed by how much of the Ops Squad can be offloaded to an agentic team, and am very aware that this is only a few hops away from being full agentic DevOps org. However, this is operations we are talking about and the last thing we want is a system that further contributes to the operational debt haha! So, having a human-in-the-loop is still very critical, for now.
 
