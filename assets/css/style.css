@@ -7,7 +7,7 @@
   --accent: #2563eb;
   --border: #e5e7eb;
   --code-bg: #f6f8fa;
-  --maxw: 48rem;
+  --maxw: 46rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,8 +31,8 @@ body {
   color: var(--fg);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,12 +48,15 @@ a:hover { text-decoration: underline; }
 /* ---------- Header ---------- */
 .site-header {
   border-bottom: 1px solid var(--border);
-  padding: 2rem 0 1.25rem;
-  margin-bottom: 2.5rem;
+  padding: 1.25rem 0 0.9rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--fg);
   letter-spacing: -0.02em;
@@ -66,10 +69,9 @@ a:hover { text-decoration: underline; }
 }
 
 .site-nav {
-  margin-top: 1rem;
   display: flex;
-  gap: 1.25rem;
-  font-size: 0.925rem;
+  gap: 1.1rem;
+  font-size: 0.875rem;
 }
 .site-nav a { color: var(--muted); }
 .site-nav a:hover { color: var(--accent); text-decoration: none; }
@@ -77,62 +79,65 @@ a:hover { text-decoration: underline; }
 /* ---------- Post list ---------- */
 .post-list { list-style: none; padding: 0; margin: 0; }
 .post-list > li {
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   border-bottom: 1px solid var(--border);
 }
-.post-list h2 { margin: 0 0 0.35rem; font-size: 1.35rem; letter-spacing: -0.01em; }
+.post-list > li:first-child { padding-top: 0; }
+.post-list h2 { margin: 0 0 0.25rem; font-size: 1.3rem; letter-spacing: -0.01em; }
 .post-list h2 a { color: var(--fg); }
 .post-list h2 a:hover { color: var(--accent); text-decoration: none; }
 
 .post-subtitle {
-  margin: 0.25rem 0 0.4rem;
+  margin: 0.15rem 0 0.25rem;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-style: italic;
 }
 
 .post-meta {
-  margin: 0.25rem 0 0;
+  margin: 0.2rem 0 0;
   color: var(--muted);
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 
-.post-excerpt { margin: 0.6rem 0 0; color: var(--fg); opacity: 0.85; }
+.post-excerpt { margin: 0.5rem 0 0; color: var(--fg); opacity: 0.85; }
 
 /* ---------- Article ---------- */
-.post-header { margin-bottom: 2rem; }
-.post-title { margin: 0 0 0.4rem; font-size: 2.1rem; line-height: 1.2; letter-spacing: -0.025em; }
+.post-header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.post-title { margin: 0 0 0.35rem; font-size: 1.85rem; line-height: 1.15; letter-spacing: -0.025em; }
+.page-title { margin: 0 0 1.5rem; font-size: 1.85rem; line-height: 1.15; letter-spacing: -0.025em; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
 
-.post-content { font-size: 1.0625rem; }
-.post-content h1 { font-size: 1.7rem; margin-top: 2.25rem; }
-.post-content h2 { font-size: 1.4rem; margin-top: 2rem; }
-.post-content h3 { font-size: 1.2rem; margin-top: 1.75rem; }
+.post-content { font-size: 1.05rem; }
+.post-content h1 { font-size: 1.55rem; margin-top: 1.75rem; }
+.post-content h2 { font-size: 1.3rem; margin-top: 1.5rem; }
+.post-content h3 { font-size: 1.15rem; margin-top: 1.25rem; }
 .post-content h1, .post-content h2, .post-content h3 {
   line-height: 1.3;
   letter-spacing: -0.015em;
 }
+.post-content h1:first-child, .post-content h2:first-child, .post-content h3:first-child { margin-top: 0; }
 
-.post-content p { margin: 1.1rem 0; }
+.post-content p { margin: 0.75rem 0; }
 
 .post-content img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   border: 1px solid var(--border);
   display: block;
 }
 
 .post-content blockquote {
-  margin: 1.5rem 0;
-  padding: 0.25rem 1.25rem;
+  margin: 1rem 0;
+  padding: 0.2rem 1.1rem;
   border-left: 3px solid var(--accent);
   color: var(--muted);
   font-style: italic;
 }
 
-.post-content ul, .post-content ol { padding-left: 1.5rem; }
-.post-content li { margin: 0.4rem 0; }
+.post-content ul, .post-content ol { padding-left: 1.35rem; }
+.post-content li { margin: 0.2rem 0; }
 
 /* Inline code */
 .post-content code {
@@ -146,8 +151,8 @@ a:hover { text-decoration: underline; }
 /* Fenced code blocks */
 .post-content pre {
   background: var(--code-bg);
-  padding: 1rem 1.15rem;
-  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
   overflow-x: auto;
   border: 1px solid var(--border);
   line-height: 1.5;
@@ -155,69 +160,69 @@ a:hover { text-decoration: underline; }
 .post-content pre code {
   background: none;
   padding: 0;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
 }
 
 .post-content hr {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+  margin: 1.75rem 0;
 }
 
 /* Tables */
 .post-content table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1.5rem 0;
-  font-size: 0.95rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
 }
 .post-content th, .post-content td {
   border: 1px solid var(--border);
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.65rem;
   text-align: left;
 }
 .post-content th { background: var(--code-bg); }
 
 /* ---------- Tags / nav ---------- */
-.post-tags { margin-top: 2.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.post-tags { margin-top: 1.75rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .tag, .cat {
   background: var(--code-bg);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 0.2rem 0.7rem;
-  font-size: 0.8rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 
 .post-nav {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  font-size: 0.925rem;
+  font-size: 0.875rem;
 }
 .post-nav .next { margin-left: auto; text-align: right; }
 
 /* ---------- Subscribe (Buttondown) ---------- */
 .subscribe {
-  margin-top: 2.5rem;
-  padding: 1.25rem 1.4rem 1rem;
+  margin-top: 1.75rem;
+  padding: 1rem 1.2rem 0.85rem;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--code-bg);
 }
 .subscribe-title {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 .subscribe-note {
-  margin: 0.15rem 0 0.9rem;
+  margin: 0.1rem 0 0.75rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 .subscribe form {
   display: flex;
@@ -237,64 +242,65 @@ a:hover { text-decoration: underline; }
 .subscribe input[type="email"] {
   flex: 1 1 14rem;
   min-width: 0;
-  padding: 0.55rem 0.75rem;
+  padding: 0.5rem 0.7rem;
   font: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--fg);
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 5px;
 }
 .subscribe input[type="email"]:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
 .subscribe input[type="submit"] {
-  padding: 0.55rem 1.1rem;
+  padding: 0.5rem 1rem;
   font: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
   background: var(--accent);
   border: 1px solid var(--accent);
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .subscribe input[type="submit"]:hover { filter: brightness(1.08); }
 .subscribe form p {
   flex-basis: 100%;
-  margin: 0.6rem 0 0;
-  font-size: 0.78rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
   color: var(--muted);
 }
 .subscribe form p a { color: var(--muted); }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  margin-top: 4rem;
-  padding: 2rem 0;
+  margin-top: 2.5rem;
+  padding: 1.25rem 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 
 .intro {
   color: var(--muted);
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.5rem;
 }
 
 .archive-link {
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 0.85rem;
   border-top: 1px solid var(--border);
 }
 
 
 @media (max-width: 600px) {
-  body { font-size: 17px; }
-  .post-title { font-size: 1.7rem; }
+  body { font-size: 16px; }
+  .site-header { flex-direction: column; gap: 0.75rem; }
+  .post-title { font-size: 1.5rem; }
   .post-nav { flex-direction: column; }
   .post-nav .next { text-align: left; margin-left: 0; }
 }
